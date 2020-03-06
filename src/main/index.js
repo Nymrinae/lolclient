@@ -1,5 +1,10 @@
 /* globals INCLUDE_RESOURCES_PATH */
 import { app } from 'electron'
+import electronDebug from 'electron-debug'
+
+electronDebug({
+  showDevTools: true
+})
 
 /**
  * Set `__resources` path to resources files in renderer process

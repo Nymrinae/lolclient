@@ -13,5 +13,7 @@ export default {
 <style>
 body {
   margin: 0 !important;
+  height: 100vh !important;
+  overflow-y: hidden;
 }
 </style>

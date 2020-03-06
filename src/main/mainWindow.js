@@ -12,8 +12,8 @@ const winHandler = new BrowserWinHandler({
 })
 
 winHandler.onCreated(browserWindow => {
-  if (isDev) browserWindow.loadURL(DEV_SERVER_URL)
-  else browserWindow.loadFile(INDEX_PATH)
+  isDev ? browserWindow.loadURL(DEV_SERVER_URL)
+        : browserWindow.loadFile(INDEX_PATH)
 })
 
 export default winHandler
