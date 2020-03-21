@@ -25,7 +25,6 @@
         fab
         x-large
         color="red"
-        to="/home"
         :disabled="!password.length"
         :dark="password.length > 0"
       >
